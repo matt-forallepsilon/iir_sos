@@ -183,7 +183,6 @@ vector<Biquad> zpk_to_sos(const ZPK ref_filt){
             [](dcomplex x){return real(x);}
         );
         
-        //sections.push_back(Biquad(real_numer, real_denom));
         sections.insert(sections.begin(), Biquad(real_numer, real_denom));
     }
 
